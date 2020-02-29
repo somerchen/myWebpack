@@ -1,0 +1,212 @@
+.main {
+  padding: 0;
+  height: 682px;
+  background-image: url(./../../img/@1ximage_bg.png);
+  background-size: auto 100%;
+  background-position: center center;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.login-box {
+  width: 354px;
+  height: 467px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  padding: 0 40px;
+}
+
+.choose-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-box .change {
+  font-size: 15px;
+  padding: 24px 0 12px;
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  color: #999;
+  cursor: pointer;
+}
+
+.choose-box .change.active {
+  border-bottom: 4px solid #AE2F2E;
+  color: #333;
+}
+
+.input-box {
+  padding-top: 16px;
+}
+
+.input-box input {
+  width: 274px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-top: 24px;
+  padding-left: 40px;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+#user {
+  background: url(./../../img/icon_yonghuming@1x.png) no-repeat left 8px center;
+  background-size: auto;
+}
+
+#phone {
+  background: url(./../../img/icon_shouji.png) no-repeat left 8px center;
+  background-size: auto;
+}
+
+input[type='password'],
+#code {
+  background: url(./../../img/icon_mima@1x.png) no-repeat left 8px center;
+  background-size: auto;
+}
+
+#code {
+  width: 180px;
+}
+
+#get-code {
+  width: 86px;
+  height: 36px;
+  background-color: #AE2F2E;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#get-code.clicked {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.code-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.input-box .check {
+  font-size: 12px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.input-box .check::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(./../../img/icon_weixuanzhong.png);
+  background-size: 100% 100%;
+  margin-right: 11px;
+}
+
+.input-box .check.checked::before {
+  background: url(./../../img/icon_xuanzhong@1x.png);
+  background-size: 100% 100%;
+}
+
+.button-box {
+  position: absolute;
+  left: 40px;
+  top: 273px;
+}
+
+.button-box button {
+  width: 274px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #AE2F2E;
+  font-size: 16px;
+  color: #fff;
+}
+
+.other-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.other-option .other {
+  font-size: 12px;
+  color: #999;
+}
+
+.third-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 374px;
+  margin: auto;
+}
+
+.third-box .tit {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.third-box .tit::before,
+.third-box .tit::after {
+  content: '';
+  display: block;
+  width: 67px;
+  height: 1px;
+  background-color: #f5f5f5;
+}
+
+.third-box .third-list {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.third-box .third-list img {
+  margin: 0 20px;
+}
+
+/* 切换相关CSS */
+.login-box {
+  overflow: hidden;
+}
+
+.form-box {
+  width: 600px;
+  display: flex;
+  transition: all .5s;
+}
+
+.form-box.changed {
+  transform: translateX(-324px);
+}
+
+.form-box>div {
+  position: relative;
+}
+
+.phone-box {
+  margin-left: 50px;
+}
+
+.button-box {
+  left: 0;
+  top: 214px;
+}

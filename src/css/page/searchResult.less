@@ -1,0 +1,356 @@
+.result-banner {
+  padding: 60px 0;
+}
+
+.form-box {
+  text-align: center;
+  position: relative;
+}
+
+.form-box::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  position: absolute;
+  left: 92px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.form-box::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #ddd;
+  transform: rotateZ(45deg);
+  position: absolute;
+  left: 104px;
+  top: 31px;
+  z-index: 1;
+}
+
+.form-box input {
+  width: 873px;
+  height: 49px;
+  padding-left: 46px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  position: relative;
+}
+
+.form-box input::placeholder {
+  color: #ddd;
+}
+
+.form-box button {
+  width: 150px;
+  height: 49px;
+  background-color: #AE2F2E;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left: 16px;
+}
+
+.checked-box {
+  padding: 33px 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checked-box .checked {
+  width: 110px;
+  line-height: 28px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.result-container .result-box {
+  width: 1022px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.result-container .result-box .num {
+  font-size: 12px;
+  line-height: 56px;
+  color: #999;
+}
+
+.result-container .result-box .result-list {
+  border-top: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.result-container .result-box .result-list .img-box img {
+  width: 90px;
+  height: 90px;
+}
+
+.result-container .result-box .result-list .info-box {
+  flex: 1;
+  padding-left: 24px;
+}
+
+.result-container .result-box .result-list .info-box .info-title {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.result-container .result-box .result-list .info-box .info-title h4 {
+  margin: 0;
+}
+
+.result-container .result-box .result-list .info-box .info-title .note {
+  padding-left: 20px;
+}
+
+.result-container .result-box .result-list .info-box .info-title .note-list {
+  font-size: 10px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 14px;
+  background-color: rgba(173, 209, 242, 0.1);
+  color: #77B2E9;
+  padding: 0 12px;
+  margin-right: 10px;
+}
+
+.result-container .result-box .result-list .info-box .info {
+  line-height: 20px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.result-container .result-box .result-list .info-box .info .info-detail {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.result-container .result-box .result-list .button-box {
+  text-align: right;
+}
+
+.result-container .result-box .result-list .button-box .buy {
+  width: 68px;
+  height: 30px;
+  background-color: #AE2F2E;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.result-container .result-box .result-list .button-box .classify {
+  width: 104px;
+  height: 30px;
+  background-color: #fff;
+  color: #AE2F2E;
+  border: 1px solid #AE2F2E;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.result-container .classify-box {
+  width: 158px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.result-container .classify-box .classify-title {
+  font-size: 12px;
+  line-height: 56px;
+}
+
+.result-container .classify-box .classify-list {
+  border-top: 1px solid #f5f5f5;
+  padding: 24px 0;
+}
+
+.result-container .classify-box .classify-list img {
+  width: 90px;
+  height: 90px;
+}
+
+.result-container .classify-box .classify-list .title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.result-container .classify-box .classify-list .price {
+  color: #AE2F2E;
+  margin-bottom: 0;
+}
+
+.result-container .classify-box .classify-list .classify {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+/* 分页样式 */
+#page {
+  margin: 20px auto 24px;
+  color: #333;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* //所有li的样式 */
+#page li {
+  display: inline-block;
+  min-width: 30px;
+  height: 30px;
+  line-height: 28px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* //上一页和下一页的样式/ */
+#page .xl-nextPage,
+#page .xl-prevPage {
+  width: 60px;
+  color: #333;
+  height: 28px;
+  line-height: 28px;
+  border: none;
+}
+
+/* //失效状态样式 */
+#page li.xl-disabled {
+  opacity: .5;
+  cursor: no-drop;
+}
+
+/* //当前页码显示状态 */
+#page li.xl-active {
+  background-color: #B13534;
+  border-color: #B13534;
+  color: #FFF;
+}
+
+/* //跳转文字 */
+#page li.xl-jumpText {
+  line-height: 30px;
+  color: #333;
+  border: none;
+  opacity: 1;
+}
+
+#page #xlJumpNum {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+
+#page .all-page-num {
+  margin-right: 16px;
+}
+
+/* //跳转按钮 */
+#page li.xl-jumpButton {
+  width: 39px;
+  height: 30px;
+  border: 1px solid #B13534;
+  border-radius: 4px;
+  color: #B13534;
+  margin-left: 16px;
+}
+
+/*  */
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.content-box .content {
+  text-align: center;
+}
+
+.content-box .content h4 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.content-box .content p {
+  font-size: 10px;
+  color: #999;
+}
+
+.address-phone {
+  justify-content: start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.address-phone .content {
+  width: 25%;
+  text-align: left;
+  padding: 10px 20px 0;
+  position: relative;
+}
+
+.address-phone .content::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 312px;
+  background-color: #f7f7f7;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.address-phone .content:last-child::after {
+  width: 0;
+}
+
+.address-phone .content .cont {
+  margin-bottom: 20px;
+}
+
+.address-phone .content .cont p {
+  font-size: 14px;
+}
+
+.address-phone .content .cont .cont-tit {
+  color: #333;
+}

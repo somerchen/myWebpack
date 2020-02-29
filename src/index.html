@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小马</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="./img/logo_cx.ht.png" alt="">
+        </div>
+        <div class="header-content">
+          <div class="detail active">首页</div>
+          <div class="detail">商标综合查询</div>
+          <div class="detail">商标高级查询</div>
+          <div class="detail">图型商标查询</div>
+          <div class="detail">请求更新</div>
+          <div class="detail">请求更新</div>
+          <div class="detail-more">
+            <span></span>
+            <span class="middle"></span>
+            <span></span>
+            <!-- <ul class="detail-more-hidden">
+              <li>选项1</li>
+              <li>选项2</li>
+              <li>选项3</li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="login-register">
+          <a href="./login.html">登录</a> <span>|</span> <a href="#">注册</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid main">
+    <div class="wrapper">
+      <div class="banner">
+        <img src="./img/image_shouye banner.png" alt="">
+        <div class="banner-input-box">
+          <input type="text" placeholder="商标名/申请人名/注册号">
+          <button onclick="location.href='./searchResult.html'">立即查询</button>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">实时数据</p>
+          <p class="sub-title">中国商标查询网，中国商标查询第一网，海量收藏丰富商标,提供中文商标查询 英文商标查询 图形商标查询</p>
+        </div>
+        <div class="real-time-data-box">
+          <div class="real-time-data">
+            <div class="data-num">259800</div>
+            <div class="data-note">注册用户(人)</div>
+          </div>
+          <div class="real-time-data">
+            <div class="data-num">48520000</div>
+            <div class="data-note">查询次数(次)</div>
+          </div>
+          <div class="real-time-data">
+            <div class="data-num">485020</div>
+            <div class="data-note">商标库(个)</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">商标注册</p>
+          <p class="sub-title">不同行业，怎么注册商标？</p>
+        </div>
+        <div class="regirst-container">
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-家居行业-n.png" alt="" class="leave">
+              <img src="./img/icon-家居行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">家居行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>家居行业</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-家居行业</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-餐饮行业-n.png" alt="" class="leave">
+              <img src="./img/icon-餐饮行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">餐饮行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>餐厅饭店、酒吧、食品销售、酒店住宿等</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-餐饮服务</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                  <div class="list">29类-食品</div>
+                  <div class="list">7类-机械设备</div>
+                  <div class="list">8类-手工器械</div>
+                  <div class="list">30类-方便食品</div>
+                  <div class="list">31类-饲料种籽</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-服装行业-n.png" alt="" class="leave">
+              <img src="./img/icon-服装行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">服装行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>家居行业</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-家居行业</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-互联网行业-n.png" alt="" class="leave">
+              <img src="./img/icon-互联网行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">互联网/IT行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>家居行业</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-家居行业</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-电器行业-n.png" alt="" class="leave">
+              <img src="./img/icon-电器行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">电器行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>家居行业</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-家居行业</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-食品行业-n.png" alt="" class="leave">
+              <img src="./img/icon-食品行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">食品行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>家居行业</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">43类-家居行业</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-啤酒饮料</div>
+                  <div class="list">33类-酒</div>
+                  <div class="list">40类-材料加工</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-建材行业-n.png" alt="" class="leave">
+              <img src="./img/icon-建材行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">建材行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-摄影行业-n.png" alt="" class="leave">
+              <img src="./img/icon-摄影行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">摄影行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-旅游行业-n.png" alt="" class="leave">
+              <img src="./img/icon-旅游行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">旅游行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-地产行业-n.png" alt="" class="leave">
+              <img src="./img/icon-地产行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">地产行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-汽车行业-n.png" alt="" class="leave">
+              <img src="./img/icon-汽车行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">汽车行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-健身行业-n.png" alt="" class="leave">
+              <img src="./img/icon-健身行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">健身行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-乐器行业-n.png" alt="" class="leave">
+              <img src="./img/icon-乐器行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">乐器行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-药品医疗行业-n.png" alt="" class="leave">
+              <img src="./img/icon-药品医疗行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">药品医疗行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-母婴行业-n.png" alt="" class="leave">
+              <img src="./img/icon-母婴行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">母婴行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-化妆品行业-n.png" alt="" class="leave">
+              <img src="./img/icon-化妆品行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="hot">化妆品行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-珠宝行业-n.png" alt="" class="leave">
+              <img src="./img/icon-珠宝行业-pre.png" alt="" class="enter">
+            </div>
+            <p class="">珠宝行业</p>
+            <div class="hover-box">
+              <div class="box-left">
+                <div class="tit">行业范围</div>
+                <p>行业范围</p>
+              </div>
+              <div class="box-middle">
+                <div class="tit">主要类别</div>
+                <div class="list-box">
+                  <div class="list">主要类别</div>
+                </div>
+              </div>
+              <div class="box-right">
+                <div class="tit">关联类别</div>
+                <div class="list-box">
+                  <div class="list">32类-关联类别</div>
+                  <div class="list">33类-关联类别</div>
+                  <div class="list">40类-关联类别</div>
+                </div>
+              </div>
+              <button>获取注册方案</button>
+            </div>
+          </div>
+          <div class="regirst">
+            <div class="img-box">
+              <img src="./img/icon-更多行业.png" alt="" class="leave">
+              <img src="./img/icon-更多行业.png" alt="" class="enter">
+            </div>
+            <p class="">更多行业</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="main-container">
+        <div class="title-box">
+          <p class="title">商标高级查询</p>
+          <p class="sub-title">中国商标查询网，中国商标查询第一网，海量收藏丰富商标,提供中文商标查询 英文商标查询 图形商标查询</p>
+        </div>
+        <div class="form-box">
+          <div class="input-box">
+            <div class="checked"></div>
+            <div class="selected-box">
+              <div class="select-head">
+                <span class="select-head-cont"></span>
+              </div>
+              <ul class="option">
+                <li class="option-item" data-key="fenlei0">分类不限</li>
+                <li class="option-item" data-key="fenlei1">选项1</li>
+                <li class="option-item" data-key="fenlei2">选项2</li>
+                <li class="option-item" data-key="fenlei3">选项3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="checked active"></div>
+            <div class="selected-box">
+              <div class="select-head">
+                <span class="select-head-cont"></span>
+              </div>
+              <ul class="option">
+                <li class="option-item" data-key="zhuce0">注册号</li>
+                <li class="option-item" data-key="zhuce1">选项1</li>
+                <li class="option-item" data-key="zhuce2">选项2</li>
+                <li class="option-item" data-key="zhuce3">选项3</li>
+              </ul>
+            </div>
+            <div class="input">
+              <input type="text" name="" placeholder="请输入注册号">
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="checked"></div>
+            <div class="selected-box">
+              <div class="select-head">
+                <span class="select-head-cont"></span>
+              </div>
+              <ul class="option">
+                <li class="option-item" data-key="daili0">代理人名称</li>
+                <li class="option-item" data-key="daili1">选项1</li>
+                <li class="option-item" data-key="daili2">选项2</li>
+                <li class="option-item" data-key="daili3">选项3</li>
+              </ul>
+            </div>
+            <div class="input">
+              <input type="text" name="" placeholder="请输入代理人名称">
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="checked"></div>
+            <div class="input">
+              <label>申请人名称</label>
+              <input type="text" name="shenqingren-name" placeholder="请输入用户名">
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="checked"></div>
+            <div class="input">
+              <label>申请人地址</label>
+              <input type="text" name="shenqingren-address" placeholder="请输入用户名">
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="checked"></div>
+            <div class="selected-box">
+              <div class="select-head">
+                <span class="select-head-cont"></span>
+              </div>
+              <ul class="option">
+                <li class="option-item" data-key="riqi0">申请日期</li>
+                <li class="option-item" data-key="riqi1">选项1</li>
+                <li class="option-item" data-key="riqi2">选项2</li>
+                <li class="option-item" data-key="riqi3">选项3</li>
+              </ul>
+            </div>
+            <div class="input">
+              <div class="date-picker-hide" id="date-picker"></div>
+              <input type="text" name="start-time" class="date-picker" id="start-time">
+              <span>至</span>
+              <input type="text" name="end-time" class="date-picker" id="end-time">
+            </div>
+          </div>
+          <div class="button-box">
+            <button class="button-reset">重置</button>
+            <button class="button-submit">查询</button>
+          </div>
+        </div>
+      </div> -->
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">专业商标服务</p>
+          <p class="sub-title">通过专业的信息化手段为全国2万家商标代理机构、事务所提供商标数据服务！</p>
+        </div>
+        <div class="content-box professional">
+          <div class="content">
+            <img src="./img/icon_商标驳回复审.png" alt="">
+            <h4>商标驳回复审</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标转让.png" alt="">
+            <h4>商标转让</h4>
+            <p>￥880/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标异议申请.png" alt="">
+            <h4>商标异议申请</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标使用许可备案.png" alt="">
+            <h4>商标使用许可备案</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标续展.png" alt="">
+            <h4>商标续展</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标撤销三年未使用.png" alt="">
+            <h4>商标撤销三年未使用</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_无效宣告.png" alt="">
+            <h4>无效宣告</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+          <div class="content">
+            <img src="./img/icon_商标变更.png" alt="">
+            <h4>商标变更</h4>
+            <p>￥2200/件</p>
+            <div class="button-box">
+              <button class="btn1">在线咨询</button>
+              <button class="btn2">在线咨询</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">互联网+专业商标服务平台</p>
+          <p class="sub-title">通过专业的信息化手段为全国2万家商标代理机构、事务所提供商标数据服务！</p>
+        </div>
+        <div class="content-box">
+          <div class="content">
+            <img src="./img/icon_yiduiyifuwu.png" alt="">
+            <h4>一对一服务</h4>
+            <p>专业顾问一对一服务</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_chaxunbaogao.png" alt="">
+            <h4>查询报告</h4>
+            <p>提供查询报告，避免注册风险</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_mingmabiaojia.png" alt="">
+            <h4>明码标价</h4>
+            <p>坚持明码标价，拒绝隐形消费</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_gaoxiaoanshi.png" alt="">
+            <h4>高效按时</h4>
+            <p>互联网平台高效申报</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_yangebaomi.png" alt="">
+            <h4>严格保密</h4>
+            <p>对客户档案严格保密</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_mianfeibaoyou.png" alt="">
+            <h4>免费包邮</h4>
+            <p>官文免费包邮</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">商标分类查询</p>
+          <p class="sub-title">通过专业的信息化手段为全国2万家商标代理机构、事务所提供商标数据服务！</p>
+        </div>
+        <div class="content-box classification">
+          <div class="content">全部</div>
+          <div class="content">01-化学品</div>
+          <div class="content">02-涂漆油料</div>
+          <div class="content">03-化学品</div>
+          <div class="content">04-涂漆油料</div>
+          <div class="content">05-化学品</div>
+          <div class="content">06-涂漆油料</div>
+          <div class="content">07-化学品</div>
+          <div class="content">08-涂漆油料</div>
+          <div class="content">09-化学品</div>
+          <div class="content">10-涂漆油料</div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">商标注册流程解析</p>
+          <p class="sub-title">海量商标数据，实时同步商标局数据，保证商标查询数据准确及时！</p>
+        </div>
+        <div class="content-box">
+          <div class="content">
+            <img src="./img/icon_chaxunjieduan.png" alt="">
+            <h4>1.查询阶段</h4>
+            <p>即时获取商标查询结果</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_shenbaojieduan.png" alt="">
+            <h4>2.申报阶段</h4>
+            <p>即时获取商标查询结果</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_shenchajieduan.png" alt="">
+            <h4>3.审查阶段</h4>
+            <p>三周左右</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_chushengonggao.png" alt="">
+            <h4>4.初审公告</h4>
+            <p>实审通过，发布公告(一年半左右)</p>
+          </div>
+          <div class="content">
+            <img src="./img/icon_chenggongxiazheng.png" alt="">
+            <h4>5.成功下证</h4>
+            <p>三个月后即可领证</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="title-box">
+          <p class="title">服务热线</p>
+          <div class="phone-box">
+            <p class="mobile">非工作时间也可拨打手机热线</p>
+            <p class="tel">24小时服务热线：400-888-1139</p>
+          </div>
+        </div>
+        <div class="content-box address-phone">
+          <div class="content">
+            <div class="cont">
+              <p class="cont-tit">广州电话(询价及办理手续)：</p>
+              <p class="cont-text">020-38819075、38866371、28690351、
+                38810791、38866172、38808153、
+                38807996、38813114、38846890、38817890</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">广州地址：</p>
+              <p class="cont-text">广州市天河区体育西路111号建和中心21层
+                邮编：510620</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="cont">
+              <p class="cont-tit">北京电话（仅办理手续）：</p>
+              <p class="cont-text">010-62218730（三线）、62215195</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">北京地址：</p>
+              <p class="cont-text">北京市丰台区广安路9号院国投财富广场(4号楼)306
+                邮编：100073</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="cont">
+              <p class="cont-tit">杭州电话(仅办理手续）：</p>
+              <p class="cont-text">010-62218730（三线）、62215195</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">杭州地址：</p>
+              <p class="cont-text">杭州市下城区凤起路139号1栋202
+                邮编：310003</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="cont">
+              <p class="cont-tit">武汉总部电话：</p>
+              <p class="cont-text">400-888-1139</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">西安电话：</p>
+              <p class="cont-text">400-888-1139</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">武汉地址：</p>
+              <p class="cont-text">湖北省武汉市东湖高新光谷科技港2A-706
+                邮编: 430223</p>
+            </div>
+            <div class="cont">
+              <p class="cont-tit">西安地址：</p>
+              <p class="cont-text">陕西省西安市高新区银河新坐标A座0703室
+                邮编: 710065</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo-box">
+      <div class="wrapper">
+        <div class="href-box">
+          <p>总部：华唯环球（武汉）科技有限公司丨电话：400-888-1139</p>
+          <p>商标转让 中唯企业、华唯环球企业（全国服务）丨<a href="#">鄂ICP备16025661号-1</a> 丨<a href="#">粤公网安备 44010602000622号</a></p>
+          <p>版权所有：<a href="#">中国商标查询网</a>丨<a href="#">商标查询、查询商标、商标注册查询、免费商标查询、商标查询网</a></p>
+        </div>
+        <div class="logo-box">
+          <img src="./img/image_xiaoma logo.png" alt="" class="logo">
+        </div>
+      </div>
+    </div>
+    <div class="footer-href-box">
+      <div class="wrapper">
+        <div class="href-top-box">
+          <p>友情链接</p>
+          <div class="a-box">
+            <a href="#">国外商标注册</a>
+            <a href="#">酒商网</a>
+            <a href="#">工商财税</a>
+            <a href="#">上海注册公司</a>
+          </div>
+        </div>
+        <div class="href-bottom-box">
+          <p><a href="#">关于我们</a> 丨 <a href="#">新闻资讯</a> 丨 <a href="#">诚聘英才</a> 丨 <a href="#">版权声明</a> 丨 <a
+              href="#">服务条款</a></p>
+          <p><a href="#">商标转让</a> <a href="#">鄂ICP备16025661号-1</a> <a href="#">粤公网安备 440106020000622号</a></p>
+          <p>电话：400-888-1139</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

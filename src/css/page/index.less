@@ -1,0 +1,559 @@
+.banner {
+  position: relative;
+}
+
+.banner-input-box {
+  position: absolute;
+  left: 260px;
+  top: 276px;
+}
+
+.banner-input-box::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.banner-input-box::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #ddd;
+  transform: rotateZ(45deg);
+  position: absolute;
+  left: 31px;
+  top: 31px;
+  z-index: 1;
+}
+
+.banner-input-box input {
+  width: 540px;
+  height: 49px;
+  padding-left: 46px;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+}
+
+.banner-input-box input::placeholder {
+  color: #ddd;
+}
+
+.banner-input-box button {
+  width: 130px;
+  height: 49px;
+  background-color: #AE2F2E;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.real-time-data-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.real-time-data {
+  text-align: center;
+  margin: 0 100px;
+}
+
+.real-time-data .data-num {
+  font-size: 32px;
+  line-height: 45px;
+  color: rgba(174, 47, 46, 1);
+}
+
+.real-time-data .data-note {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 6px;
+}
+
+.form-box {
+  padding-left: 40px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.form-box .input-box {
+  margin-top: 16px;
+  height: 36px;
+  line-height: 36px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.form-box .input-box .checked {
+  width: 16px;
+  height: 16px;
+  background: url(./../../img/icon_weixuanzhong.png);
+  background-size: 100% 100%;
+}
+
+.form-box .input-box .checked.active {
+  background: url(./../../img/icon_xuanzhong@1x.png);
+  background-size: 100% 100%;
+}
+
+.form-box .input-box .selected-box {
+  width: 160px;
+  height: 100%;
+  border-radius: 4px;
+  margin-left: 16px;
+  border: 1px solid #ddd;
+  background: url(./../../img/icon_kuozhan.png) no-repeat #f5f5f5;
+  background-position: right 12px center;
+}
+
+.form-box .input-box .selected-box .select-head {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-box .input-box .selected-box .option {
+  text-indent: 10px;
+  margin-top: 1px;
+  width: 100%;
+  color: black;
+  background: #f5f5f5;
+  line-height: 25px;
+  border: 1px #cfcfcf solid;
+  display: none;
+  position: relative;
+  z-index: 9;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.form-box .input-box .selected-box .option-item:hover {
+  background: rgba(204, 106, 67, 0.3);
+}
+
+.form-box .input-box .input {
+  margin-left: 8px;
+}
+
+.form-box .input-box .input input {
+  width: 300px;
+  height: 36px;
+  padding-left: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.form-box .input-box .input input::placeholder {
+  color: #ddd;
+}
+
+.form-box .input-box .input label {
+  padding-left: 8px;
+  padding-right: 12px;
+  font-weight: normal;
+}
+
+.form-box .input-box .input .date-picker {
+  width: 135px;
+  background: url(./../../img/icon_riqi.png) no-repeat;
+  background-position: right 12px center;
+}
+
+.form-box .input-box .input .date-picker-hide {
+  position: absolute;
+  width: 304px;
+  height: 36px;
+  opacity: 0;
+  z-index: 6;
+}
+
+.form-box .input-box .input span {
+  padding: 0 6px;
+}
+
+.form-box .button-box {
+  padding-left: 32px;
+  margin-top: 40px;
+}
+
+.form-box .button-box button {
+  width: 106px;
+  height: 36px;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-box .button-box .button-reset {
+  background-color: #f5f5f5;
+}
+
+.form-box .button-box .button-submit {
+  background-color: #AE2F2E;
+  color: #fff;
+  margin-left: 16px;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.content-box .content {
+  text-align: center;
+}
+
+.content-box .content h4 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.content-box .content p {
+  font-size: 10px;
+  color: #999;
+}
+
+.professional {
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-top: 11px;
+  padding-bottom: 22px;
+  padding-left: 40px;
+}
+
+.professional .content {
+  width: 168px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  margin-top: 11px;
+  padding-top: 20px;
+}
+
+.professional .content h4 {
+  font-size: 13px;
+}
+
+.professional .content p {
+  color: #b13534;
+}
+
+.professional .content button {
+  border: 1px solid #b13534;
+  color: #b13534;
+  width: 76px;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+/* 修改 .professional */
+.professional {
+  position: relative;
+  top: -1px;
+  padding: 0;
+}
+
+.professional .content {
+  width: 300px;
+  height: 285px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  border-right: 0.5px solid #f5f5f5;
+  padding-top: 39px;
+}
+
+.professional .content:nth-child(4n) {
+  border-right: none;
+}
+
+.professional .content h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.professional .content p {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.professional .content button {
+  width: 104px;
+  height: 36px;
+  margin-top: 36px;
+}
+
+.professional .content .btn1 {
+  background-color: #AE2F2E;
+  color: #fff;
+  margin-right: 12px;
+}
+
+.classification {
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  padding-left: 40px;
+}
+
+.classification .content {
+  width: 110px;
+  height: 28px;
+  line-height: 28px;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+.phone-box {
+  display: flex;
+  margin-top: 20px;
+}
+
+.phone-box .mobile,
+.phone-box .tel {
+  padding-left: 26px;
+  position: relative;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+.phone-box .tel {
+  margin-left: 90px;
+}
+
+.phone-box .mobile::before,
+.phone-box .tel::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(./../../img/icon_shouji.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.phone-box .tel::before {
+  background: url(./../../img/icon_dianhua.png);
+  background-size: 100% 100%;
+}
+
+.address-phone {
+  justify-content: start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.address-phone .content {
+  width: 25%;
+  text-align: left;
+  padding: 10px 20px 0;
+  position: relative;
+}
+
+.address-phone .content::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 312px;
+  background-color: #f7f7f7;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.address-phone .content:last-child::after {
+  width: 0;
+}
+
+.address-phone .content .cont {
+  margin-bottom: 20px;
+}
+
+.address-phone .content .cont p {
+  font-size: 14px;
+}
+
+.address-phone .content .cont .cont-tit {
+  color: #333;
+}
+
+.regirst-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-top: 1px solid #f5f5f5;
+  position: relative;
+  top: -1px;
+}
+
+.regirst {
+  width: 200px;
+  height: 160px;
+  text-align: center;
+  padding-top: 40px;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+  z-index: 11;
+}
+
+.regirst:nth-child(6n) {
+  border-right: none;
+}
+
+.regirst:nth-child(n + 13) {
+  border-bottom: none;
+}
+
+.regirst>p {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 29px;
+}
+
+.regirst .hot {
+  padding-left: 22px;
+}
+
+.regirst .hot::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(./../../img/icon_hot.png);
+  background-size: 100% 100%;
+  margin-left: 6px;
+}
+
+.regirst .img-box .enter {
+  display: none;
+}
+
+.regirst:hover {
+  background-color: #fbfbfb;
+  border-top: 2px solid #AE2F2E;
+  color: #AE2F2E;
+  height: auto;
+}
+
+.regirst:hover .leave {
+  display: none;
+}
+
+.regirst:hover .enter {
+  display: inline-block;
+}
+
+.regirst:hover .hover-box {
+  display: flex;
+}
+
+.hover-box {
+  background-color: #fbfbfb;
+  width: 1200px;
+  float: left;
+  padding-bottom: 60px;
+  z-index: 111;
+  position: relative;
+  text-align: left;
+  color: #333;
+  display: none;
+}
+
+.regirst:nth-child(6n+2) .hover-box {
+  margin-left: -200px;
+}
+
+.regirst:nth-child(6n+3) .hover-box {
+  margin-left: -400px;
+}
+
+.regirst:nth-child(6n+4) .hover-box {
+  margin-left: -600px;
+}
+
+.regirst:nth-child(6n+5) .hover-box {
+  margin-left: -800px;
+}
+
+.regirst:nth-child(6n+6) .hover-box {
+  margin-left: -1000px;
+}
+
+.hover-box>div {
+  padding: 24px;
+  width: 352px;
+}
+
+.hover-box .tit {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hover-box p {
+  margin-top: 24px;
+}
+
+.hover-box button {
+  width: 132px;
+  height: 36px;
+  background-color: #AE2F2E;
+  color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.hover-box .list-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.hover-box .list-box .list {
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
